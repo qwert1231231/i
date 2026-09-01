@@ -16,6 +16,8 @@ class Token:
 
 
 KEYWORDS = {
+    "pin": "PRINT",
+    "prt": "PRINT",
     "out": "OUT",
     "ask": "ASK",
     "if": "IF",

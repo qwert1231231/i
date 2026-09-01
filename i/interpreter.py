@@ -99,6 +99,8 @@ class Interpreter:
 
     def _register_builtins(self) -> None:
         self.globals.declare("print", self._builtin_print)
+        self.globals.declare("pin", self._builtin_print)
+        self.globals.declare("prt", self._builtin_print)
         self.globals.declare("out", self._builtin_print)
         self.globals.declare("yap", self._builtin_print)
         self.globals.declare("input", self._builtin_input)

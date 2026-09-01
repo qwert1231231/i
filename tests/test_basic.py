@@ -44,6 +44,16 @@ def test_yap_alias() -> None:
     assert output == "hi"
 
 
+def test_pin_alias() -> None:
+    output = run_script("pin('hello from pin')")
+    assert output == "hello from pin"
+
+
+def test_prt_alias() -> None:
+    output = run_script("prt('hello from prt')")
+    assert output == "hello from prt"
+
+
 def test_color_output() -> None:
     output = run_script("out(color('Hi', 'red'))")
     assert output == "\x1b[31mHi\x1b[0m"
