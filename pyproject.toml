@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "i-lang"
+version = "0.1.0"
+description = "I is a small, modern language with a beginner-friendly syntax and a portable CLI."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "I Language Team" }]
+
+[project.urls]
+Homepage = "https://example.com/i"
+Repository = "https://example.com/i"
+
+[project.scripts]
+i = "i.__main__:main"
+
+[tool.setuptools]
+packages = ["i"]
+
+[tool.setuptools.package-data]
+i = ["*.py"]
