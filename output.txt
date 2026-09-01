@@ -1,3 +1,0 @@
-Hello from I!
-This is line 2.
-This is appended!
